@@ -1,0 +1,27 @@
+Source: ruby-source-map
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Section: ruby
+Priority: optional
+Build-Depends: debhelper-compat (= 12),
+               gem2deb,
+               ruby-json,
+               ruby-rspec
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-source-map
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-source-map.git
+Homepage: https://github.com/ConradIrwin/ruby-source_map
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+Rules-Requires-Root: no
+
+Package: ruby-source-map
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby-json,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: ruby support for source maps in javascripts
+ Ruby support for Source Maps allows you to interact with Source Maps
+ in Ruby. This lets you do things like concatenate different javascript
+ files and still debug them as though they were separate files.

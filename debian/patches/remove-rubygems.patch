@@ -1,0 +1,13 @@
+Description: Remove rubygems
+ Debian specific, debian/control has the dependencies.
+Author: Pirate Praveen <praveen@debian.org>
+Last-Updated: 2014-05-03
+
+--- a/lib/source_map.rb
++++ b/lib/source_map.rb
+@@ -1,4 +1,4 @@
+-require 'rubygems'
++#require 'rubygems'
+ require 'json'
+ 
+ require File.expand_path("../source_map/vlq.rb", __FILE__)

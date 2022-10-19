@@ -1,0 +1,10 @@
+Author: Daniel Leidert <dleidert@debian.org>
+Description: Don't rely on lib/ to run tests
+ This fails with autopkgtest moving lib/ away.
+Last-Update: 2020-02-07
+
+--- a/spec/spec_helper.rb
++++ b/spec/spec_helper.rb
+@@ -1 +1 @@
+-require './lib/source_map'
++require 'source_map'

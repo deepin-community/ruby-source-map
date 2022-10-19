@@ -1,0 +1,32 @@
+ruby-source-map (3.0.1+git.20120229.bda06a3f-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Cédric Boutillier ]
+  * Remove version in the gem2deb build-dependency
+  * Run wrap-and-sort on packaging files
+
+  [ Daniel Leidert ]
+  * d/compat: Remove obsolete file.
+  * d/control: Add Rules-Requires-Root and Testsuite.
+    (Build-Depends): Use debhelper-compat 12.
+    (Standards-Version): Bump to 4.5.0.
+    (Vcs-Browser, Vcs-Git): Fix URLs.
+    (Depends): Remove interpreter.
+  * d/copyright: Add upstream contact.
+    (Format): Fix secure URI.
+    (Source): Update URI.
+  * d/ruby-tests.rake: Minor update.
+  * d/watch: Use gemwatch.d.n.
+  * d/patches/fix-tests.patch: Add patch.
+    - Fix tests run by autopkgtest by not relying on lib/.
+  * d/patches/series: Add patch.
+  * d/upstream/: Add metadata.
+
+ -- Daniel Leidert <dleidert@debian.org>  Fri, 07 Feb 2020 14:40:27 +0100
+
+ruby-source-map (3.0.1+git.20120229.bda06a3f-1) unstable; urgency=low
+
+  * Initial release (Closes: #746783)
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 03 May 2014 19:50:04 +0530

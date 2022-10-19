@@ -1,0 +1,2 @@
+version=3
+https://gemwatch.debian.net/source_map .*/source_map-([\d.]+)\.tar\.gz
